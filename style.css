@@ -1,0 +1,109 @@
+*
+{
+	box-sizing: border-box;  /* para que los elementos no crezcan cuando haya espacios vacíos */ 
+}
+
+
+body   /* todos los elementos de esta etiqueta */
+{
+	font-family: "Roboto";  /* familia de fuentes */
+	font-size: 16px;
+
+}
+
+p
+{
+	color:black;
+}
+
+header 
+{
+	padding: 15px 0;  /* espacio hacia adentro del elemento */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: white;
+	width: 100%;
+
+}
+
+a
+{
+	display: inline-block;   /* cambia comportamiento de los elementos */
+							 /* coloca elementos uno al lado de otro rspetando el espacio interno del contenido alto y ancho*/
+}
+
+header .container
+{
+	display: flex;	 /* aprovecha espacio de este elemento */
+	justify-content: space-between;
+	align-items: center;  /* centrado */
+}
+
+header .container .logo
+{
+	width: 100px;  /* ancho de elemento */
+}
+
+header .container a
+{
+	color: red;   /* color de texto */
+	text-decoration: none ;  /* quita subrayado  */
+	margin: 0 15px; 'esp' /* márgenes automáticos */
+}
+
+.container
+{
+	width:1140px;
+	margin: 0 auto 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.boton
+{
+	text-align: center;	
+	text-decoration: none;
+	padding: 15px 20px;
+}
+
+.boton.boton-rojo
+{
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#inicio
+{
+	position: relative; /*son varias */
+}
+
+#inicio img
+{
+	width: 100%;
+	display: block;
+}
+
+#inicio .bloque-inicio
+{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 400px;
+	text-align: center;
+	margin-left: -200px;
+}
+
+#inicio .bloque-inicio h1
+{
+	color: white;
+	font-size: 35px;	
+}
+
+#inicio .bloque-inicio p
+{
+	color: white;		
+}
